@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마포 신작애니 백링크 자동화 프로그램 | 링크빌더</title>
+    <meta name="description" content="마포에서 시작하는 신작애니 마케팅을 위한 백링크 자동화 프로그램. 수동 링크 빌딩은 이제 그만, bro. 스위스 미니멀 디자인으로 깔끔하게.">
+    <meta name="keywords" content="백링크 자동화 프로그램, 마포 백링크, 신작애니 마케팅, 링크빌더, 자동 백링크, SEO 자동화, 애니메이션 마케팅">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-mono-chrome">
+    <link rel="canonical" href="https://sf-t3-1779642675702-317.vercel.app/">
+    
+    <!-- OG 메타 -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="마포 신작애니 백링크 자동화 프로그램 | 링크빌더">
+    <meta property="og:description" content="신작애니 마케팅, 이제 백링크 자동화로 해결하세요. 마포 지역 기반, bro 스타일의 톤으로 설명해드립니다.">
+    <meta property="og:url" content="https://sf-t3-1779642675702-317.vercel.app/">
+    <meta property="og:image" content="https://sf-t3-1779642675702-317.vercel.app/og-image.svg">
+    <meta property="og:site_name" content="링크빌더">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="마포 신작애니 백링크 자동화 프로그램 | 링크빌더">
+    <meta name="twitter:description" content="신작애니 마케팅, 이제 백링크 자동화로 해결하세요. 마포 지역 기반, bro 스타일의 톤으로 설명해드립니다.">
+    <meta name="twitter:image" content="https://sf-t3-1779642675702-317.vercel.app/twitter-image.svg">
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "링크빌더 - 백링크 자동화 프로그램",
+        "description": "마포 지역 신작애니 마케팅을 위한 백링크 자동화 솔루션. 수동 작업 없이 링크를 자동으로 생성하고 관리합니다.",
+        "url": "https://sf-t3-1779642675702-317.vercel.app/",
+        "telephone": "010-6279-0862",
+        "areaServed": "마포",
+        "category": "SEO 자동화 소프트웨어",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "KRW",
+            "availability": "https://schema.org/InStock"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "bestRating": "5",
+            "ratingCount": "24"
+        }
+    }
+    </script>
+
+    <style>
+        /* Reset & Base */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #ffffff;
+            color: #111111;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Container */
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Typography */
+        h1, h2, h3 { font-weight: 600; letter-spacing: -0.02em; }
+        h1 { font-size: 3.2rem; line-height: 1.1; margin-bottom: 24px; }
+        h2 { font-size: 2.2rem; margin-bottom: 16px; }
+        h3 { font-size: 1.4rem; margin-bottom: 8px; }
+        p { font-size: 1.1rem; margin-bottom: 16px; color: #333; }
+        a { color: #2563eb; text-decoration: none; transition: opacity 0.2s; }
+        a:hover { opacity: 0.7; }
+
+        /* Borders & Rules */
+        .rule { border: none; border-top: 1px solid #ddd; margin: 0; }
+
+        /* Header & Nav */
+        header {
+            position: sticky;
+            top: 0;
+            background: #ffffff;
+            border-bottom: 1px solid #ddd;
+            z-index: 1000;
+            padding: 12px 0;
+        }
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #111;
+            letter-spacing: -0.03em;
+        }
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+        }
+        .nav-links a {
+            color: #111;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+        .nav-links a:hover { color: #2563eb; }
+        .cta-link {
+            background: #111;
+            color: #fff !important;
+            padding: 8px 20px;
+            border-radius: 0;
+            font-weight: 600;
+            border: 1px solid #111;
+            transition: all 0.2s;
+        }
+        .cta-link:hover {
+            background: #fff;
+            color: #111 !important;
+        }
+
+        /* Hamburger */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 4px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 4px;
+        }
+        .hamburger span {
+            width: 24px;
+            height: 2px;
+            background: #111;
+            transition: 0.3s;
+        }
+
+        /* Hero */
+        .hero {
+            padding: 72px 0 48px;
+            border-bottom: 1px solid #eee;
+        }
+        .hero .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: center;
+        }
+        .hero-visual {
+            background: #f5f5f5;
+            border: 1px solid #ddd;
+            height: 320px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-visual::after {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 10px,
+                rgba(37, 99, 235, 0.03) 10px,
+                rgba(37, 99, 235, 0.03) 20px
+            );
+        }
+        .hero h1 span { color: #2563eb; }
+        .hero-sub {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 32px;
+        }
+        .hero-cta {
+            display: inline-block;
+            background: #111;
+            color: #fff;
+            padding: 14px 32px;
+            font-weight: 600;
+            border: 1px solid #111;
+            transition: all 0.2s;
+            font-size: 1.05rem;
+        }
+        .hero-cta:hover {
+            background: #fff;
+            color: #111;
+        }
+
+        /* Sections */
+        section { padding: 72px 0; }
+        .section-gap { margin-bottom: 120px; }
+
+        /* Features Grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 48px;
+        }
+        .feature-card {
+            border: 1px solid #ddd;
+            padding: 32px;
+            transition: all 0.2s;
+        }
+        .feature-card:hover { border-color: #2563eb; }
+        .feature-icon { font-size: 2.5rem; margin-bottom: 16px; display: block; }
+        .feature-card h3 { font-size: 1.2rem; }
+        .feature-card p { font-size: 0.95rem; color: #555; }
+
+        /* UGC Reviews */
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 48px;
+        }
+        .review-card {
+            border: 1px solid #ddd;
+            padding: 32px;
+            background: #fafafa;
+        }
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        .review-nick { font-weight: 600; font-size: 0.95rem; }
+        .review-date { font-size: 0.8rem; color: #888; }
+        .review-stars { color: #2563eb; letter-spacing: 2px; margin-bottom: 12px; }
+        .review-text { font-size: 0.95rem; color: #444; line-height: 1.5; }
+
+        /* About / Story */
+        .story-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+        }
+        .story-visual {
+            background: #f0f0f0;
+            border: 1px solid #ddd;
+            height: 280px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+        }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid #ddd;
+            padding: 48px 0;
+            text-align: center;
+        }
+        footer p { font-size: 0.9rem; color: #888; margin-bottom: 4px; }
+        .footer-phone { font-size: 1.1rem; font-weight: 600; color: #111; margin: 12px 0; }
+        .footer-phone a { color: #111; }
+        .copyright { font-size: 0.8rem; color: #aaa; margin-top: 24px; }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container { padding: 0 16px; }
+            h1 { font-size: 2.2rem; }
+            h2 { font-size: 1.6rem; }
+            .hero .container { grid-template-columns: 1fr; gap: 32px; }
+            .hero { padding: 48px 0 32px; }
+            .hero-visual { height: 200px; font-size: 2.5rem; }
+            
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: #fff;
+                border-bottom: 1px solid #ddd;
+                padding: 16px;
+                gap: 16px;
+            }
+            .nav-links.active { display: flex; }
+            .hamburger { display: flex; }
+            
+            .features-grid { grid-template-columns: 1fr; gap: 24px; }
+            .reviews-grid { grid-template-columns: 1fr; gap: 24px; }
+            .story-grid { grid-template-columns: 1fr; gap: 32px; }
+            .story-visual { height: 200px; }
+            section { padding: 48px 0; }
+            .section-gap { margin-bottom: 64px; }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .hero, .feature-card, .review-card { animation: fadeInUp 0.6s ease-out; }
+        .feature-card:nth-child(2) { animation-delay: 0.1s; }
+        .feature-card:nth-child(3) { animation-delay: 0.2s; }
+        .review-card:nth-child(2) { animation-delay: 0.1s; }
+        .review-card:nth-child(3) { animation-delay: 0.2s; }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="container">
+                <div class="logo">링크빌더</div>
+                <button class="hamburger" aria-label="메뉴 열기" onclick="toggleMenu()">
+                    <span></span><span></span><span></span>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#features">기능</a></li>
+                    <li><a href="#reviews">후기</a></li>
+                    <li><a href="#story">스토리</a></li>
+                    <li><a href="tel:010-6279-0862" class="cta-link">010-6279-0862</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div>
+                <h1>신작애니 마케팅,<br><span>백링크 자동화</span>로<br>해결하세요</h1>
+                <p class="hero-sub">마포에서 시작하는 당신의 애니, 수동 링크 빌딩은 이제 그만. bro, 자동화로 결과를 만들어봐.</p>
+                <a href="tel:010-6279-0862" class="hero-cta">📞 지금 전화 문의</a>
+            </div>
+            <div class="hero-visual">
+                🎬🔗
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features">
+        <div class="container">
+            <h2>이런 기능이 있어요, bro</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <span class="feature-icon">🤖</span>
+                    <h3>자동 링크 생성</h3>
+                    <p>신작애니 관련 사이트에 자동으로 백링크를 심어줘. 수동 작업은 이제 안녕.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">📊</span>
+                    <h3>실시간 모니터링</h3>
+                    <p>링크 상태를 실시간으로 체크. 깨진 링크는 바로 알림이 가.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🎯</span>
+                    <h3>타겟 설정</h3>
+                    <p>마포 지역, 애니 관련 키워드에 맞춰 정확히 타겟팅. 효율 극대화.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="rule">
+
+    <!-- Reviews (UGC) -->
+    <section id="reviews">
+        <div class="container">
+            <h2>써본 사람들 후기</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <span class="review-nick">애니덕후84</span>
+                        <span class="review-date">2025.01.15</span>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">진짜 신박하다. 내가 만든 신작애니 홍보하는데 하루에 50개씩 백링크가 자동으로 박히더라. bro 짱.</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <span class="review-nick">마포마케터</span>
+                        <span class="review-date">2025.02.03</span>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">수동으로 하다가 이거 쓰니까 인생이 편해졌어. 마포에서 애니 마케팅하는 사람은 무조건 써야됨.</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <span class="review-nick">린킨파크짱</span>
+                        <span class="review-date">2025.02.20</span>
+                    </div>
+                    <div class="review-stars">★★★★☆</div>
+                    <p class="review-text">아직 초기버전이지만 가능성 있는 툴. 업데이트 기대됨. 가격도 합리적이고.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="rule">
+
+    <!-- Story / About -->
+    <section id="story">
+        <div class="container">
+            <h2>왜 만들었을까?</h2>
+            <div class="story-grid">
+                <div>
+                    <p>사실 나도 예전에 마포에서 신작애니 하나 만들었어. 근데 마케팅이 너무 힘들더라. 수동으로 백링크 하나하나 걸다가 손가락에 쥐날 지경이었지.</p>
+                    <p>그래서 만들었어, bro. 이 프로그램 하나면 너도 편하게 링크 빌딩하고, 애니에 집중할 수 있어. 우리 같이 성장하자.</p>
+                    <p style="margin-top: 24px;"><strong>📞 010-6279-0862</strong> — 언제든 전화 줘, 친근하게 상담해줄게.</p>
+                </div>
+                <div class="story-visual">
+                    💡➡️🔗
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="rule">
+
+    <!-- Footer -->
+    
+<!-- PBN Recent Posts Feed Section -->
+<section class="recent-posts-section" aria-label="최신 글 피드" style="padding:60px 20px;background:#f7fafc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0">
+  <div style="max-width:1100px;margin:0 auto">
+    <h3 style="font-size:1.5rem;font-weight:800;color:#1a202c;text-align:center;margin-bottom:32px;letter-spacing:-0.025em">📝 최신 관련 포스트</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
+      
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⚖️ COMPARE</span>
+          <time datetime="2026-06-10">2026-06-10</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">백링크 자동화 프로그램 vs 백링크 자동화 프로그램 비교 — 어디가 더 좋을까? 비교 분석</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">제목: 창작한 제목 | Key 사 비주얼 노벨 미사용 루트 스크립트 분석 아, 진짜... 녹음 당시 대본에 있었지만 최종판에서 삭제된 대사 메모와 삭제 이유를 파헤치는 과정이 얼마나 복잡하고 어색했을까. 이 미사용 루트 스크립트의 내용은 정말 비밀스럽게 보였어. ## </p>
+      </div>
+      <a href="posts/compare-002-1oyqrv9.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    </div>
+  </div>
+</section>
+<footer>
+        <div class="container">
+            <div class="logo" style="margin-bottom: 16px;">링크빌더</div>
+            <p>마포 기반 신작애니 백링크 자동화 프로그램</p>
+            <div class="footer-phone"><a href="tel:010-6279-0862">📞 010-6279-0862</a></div>
+            <p style="font-size: 0.85rem; color: #888;">운영시간: 평일 10:00 ~ 19:00 (주말/공휴일 휴무)</p>
+            <p class="copyright">&copy; 2025 링크빌더. All rights reserved. bro.</p>
+        </div>
+    </footer>
+
+    <!-- Hamburger Script -->
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('navLinks');
+            nav.classList.toggle('active');
+        }
+        // Close menu on link click (mobile)
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navLinks').classList.remove('active');
+            });
+        });
+    </script>
+
+</body>
+</html>
