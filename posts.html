@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 (1/2) · sf-t3-1779642675702-317</title>
+  <meta name="description" content="sf-t3-1779642675702-317에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://sf-t3-1779642675702-317.maphoshirts.xyz/posts.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ /* Reset & Base */
+ *, *::before, *::after {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+ html {
+ font-size: 16px;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+ }
+ body {
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+ background-color: #f5f5f7;
+ color: #1d1d1f;
+ line-height: 1.6;
+ min-height: 100vh;
+ }
+ /* Container */
+ .container {
+ max-width: 980px;
+ margin: 0 auto;
+ padding: 0 24px;
+ width: 100%;
+ }
+ /* Typography */
+ h1, h2, h3 {
+ font-weight: 600;
+ letter-spacing: -0.02em;
+ color: #1d1d1f;
+ }
+ h1 {
+ font-size: 2.5rem;
+ line-height: 1.1;
+ margin-bottom: 0.5rem;
+ }
+ h2 {
+ font-size: 1.75rem;
+ line-height: 1.2;
+ margin-bottom: 1rem;
+ margin-top: 2.5rem;
+ }
+ h3 {
+ font-size: 1.25rem;
+ line-height: 1.3;
+ margin-bottom: 0.75rem;
+ margin-top: 1.5rem;
+ }
+ p {
+ margin-bottom: 1rem;
+ color: #515154;
+ }
+ a {
+ color: #0066cc;
+ text-decoration: none;
+ transition: color 0.2s ease;
+ }
+ a:hover {
+ color: #004080;
+ }
+ /* Borders & Rules */
+ .rule {
+ border: none;
+ height: 1px;
+ background-color: #d2d2d7;
+ margin: 2rem 0;
+ }
+ /* Header & Nav */
+ header {
+ background-color: rgba(255, 255, 255, 0.8);
+ backdrop-filter: blur(20px);
+ -webkit-backdrop-filter: blur(20px);
+ border-bottom: 1px solid #d2d2d7;
+ position: sticky;
+ top: 0;
+ z-index: 100;
+ }
+ nav .container {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ height: 64px;
+ }
+ nav a {
+ font-size: 0.9rem;
+ font-weight: 500;
+ color: #1d1d1f;
+ padding: 0.5rem 0.75rem;
+ border-radius: 8px;
+ transition: background-color 0.2s ease;
+ }
+ nav a:hover {
+ background-color: #e8e8ed;
+ color: #1d1d1f;
+ }
+ .nav-links {
+ display: flex;
+ gap: 0.5rem;
+ align-items: center;
+ }
+ .menu-toggle {
+ display: none;
+ background: none;
+ border: none;
+ font-size: 1.5rem;
+ cursor: pointer;
+ padding: 0.5rem;
+ color: #1d1d1f;
+ }
+ .tel-link {
+ background-color: #1d1d1f;
+ color: #ffffff;
+ padding: 0.5rem 1rem;
+ border-radius: 20px;
+ font-weight: 600;
+ font-size: 0.85rem;
+ }
+ .tel-link:hover {
+ background-color: #515154;
+ color: #ffffff;
+ }
+ /* Hero Section */
+ .hero {
+ padding: 4rem 0 2rem;
+ text-align: center;
+ }
+ .hero h1 {
+ font-size: 2.8rem;
+ margin-bottom: 1rem;
+ }
+ .hero p {
+ font-size: 1.2rem;
+ max-width: 600px;
+ margin: 0 auto 1.5rem;
+ }
+ /* Cards */
+ .card-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+ gap: 1.5rem;
+ margin: 2rem 0;
+ }
+ .card {
+ background: #ffffff;
+ border-radius: 16px;
+ padding: 1.5rem;
+ box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+ border: 1px solid #e8e8ed;
+ transition: transform 0.2s ease, box-shadow 0.2s ease;
+ }
+ .card:hover {
+ transform: translateY(-2px);
+ box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+ }
+ .card h3 {
+ margin-top: 0;
+ font-size: 1.2rem;
+ }
+ .card p {
+ font-size: 0.95rem;
+ }
+ /* FAQ */
+ .faq-item {
+ border-bottom: 1px solid #e8e8ed;
+ padding: 1.25rem 0;
+ }
+ .faq-item:last-child {
+ border-bottom: none;
+ }
+ .faq-question {
+ font-weight: 600;
+ font-size: 1.1rem;
+ cursor: pointer;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ color: #1d1d1f;
+ }
+ .faq-answer {
+ margin-top: 0.75rem;
+ color: #515154;
+ font-size: 0.95rem;
+ line-height: 1.6;
+ }
+ /* Footer */
+ footer {
+ background-color: #f5f5f7;
+ border-top: 1px solid #d2d2d7;
+ padding: 2rem 0;
+ text-align: center;
+ font-size: 0.85rem;
+ color: #86868b;
+ margin-top: 3rem;
+ }
+ footer a {
+ color: #515154;
+ }
+ /* Responsive */
+ @media (max-width: 768px) {
+ .container {
+ padding: 0 16px;
+ }
+ h1 {
+ font-size: 1.8rem;
+ }
+ h2 {
+ font-size: 1.4rem;
+ }
+ .hero h1 {
+ font-size: 2rem;
+ }
+ .hero p {
+ font-size: 1rem;
+ }
+ .menu-toggle {
+ display: block;
+ }
+ .nav-links {
+ display: none;
+ flex-direction: column;
+ position: absolute;
+ top: 64px;
+ left: 0;
+ right: 0;
+ background: rgba(255, 255, 255, 0.95);
+ backdrop-filter: blur(20px);
+ padding: 1rem;
+ border-bottom: 1px solid #d2d2d7;
+ gap: 0.25rem;
+ }
+ .nav-links.active {
+ display: flex;
+ }
+ .nav-links a {
+ padding: 0.75rem;
+ width: 100%;
+ text-align: center;
+ }
+ .tel-link {
+ margin-top: 0.5rem;
+ text-align: center;
+ }
+ .card-grid {
+ grid-template-columns: 1fr;
+ }
+ }
+ </style>
+  <meta property="og:title" content="글 목록 (1/2) · sf-t3-1779642675702-317">
+  <meta property="og:description" content="sf-t3-1779642675702-317에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://sf-t3-1779642675702-317.maphoshirts.xyz/posts.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header>
+ <nav>
+ <div class="container">
+ <a href="/" style="font-weight: 700; font-size: 1.1rem; letter-spacing: -0.02em;">링크빌더</a>
+ <button class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('active')" aria-label="메뉴 열기">
+ ☰
+ </button>
+ <div class="nav-links">
+ <a href="/">홈</a>
+ <a href="/info">정보</a>
+ <a href="/pricing">가격</a>
+ <a href="/contact">문의</a>
+ 
+ </div>
+ </div>
+ </nav>
+ </header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 33개 · 1/2 페이지</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/compare-002-1oyqrv9.html">백링크 자동화 프로그램 vs 백링크 자동화 프로그램 비교</a>
+        <p class="post-item__summary">최근 신작애니 관련 콘텐츠를 운영하는 분들 사이에서 검색 엔진 최적화에 대한 관심이 매우 뜨겁습니다. 특히 마포 지역을 기반으로 애니메이션 정보를 제공하는 사이트나 커뮤니티가 늘어나면서 검색 결과 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260705-1572.html">마포 지역 신작 애니메이션 상영 정보와 백링크 자동화의 연결 고리</a>
+        <p class="post-item__summary">마포 일대에서 최근 주목받는 신작 애니메이션 상영회와 홍보 전략에 대해 알아봅니다. 새로운 애니메이션 작품이 공개될 때마다 팬들은 관련 정보를 빠르게 찾기 위해 검색 엔진에 의존합니다. 이 과정에서</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0501.html">마포에서 지역 특색을 찾아보다</a>
+        <p class="post-item__summary">마포는 서울에서도 독특한 매력을 지닌 지역입니다. 한강의 자연스러운 흐름을 따라 형성된 이 곳은 주거, 상업, 문화가 조화를 이루고 있습니다. 최근 몇 년간 카페, 음식점, 생활용품점 등 다양한 소</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0502.html">마포 지역 문화와 라이프스타일 가이드</a>
+        <p class="post-item__summary">마포는 서울에서 가장 역동적인 지역 중 하나로, 홍대와 합정을 중심으로 한 예술과 상업이 어우러진 독특한 매력을 지니고 있습니다. 이 지역은 오랫동안 창의적인 인물들과 로컬 비즈니스가 모여드는 장소</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0503.html">마포의 숨은 매력을 발견하는 로컬 가이드</a>
+        <p class="post-item__summary">마포는 서울의 중심부에 위치하면서도 독특한 개성을 유지하는 지역입니다. 한강공원의 자연환경과 홍대의 문화예술이 어우러져 있으며, 주거와 상업이 균형잡혀 발전해온 장점이 있습니다. 최근 몇 년간 카페</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0504.html">백링크 자동화 프로그램으로 마포 신작애니 사이트 경쟁력 높이기</a>
+        <p class="post-item__summary">신작애니 정보를 다루는 사이트를 운영하다 보면 콘텐츠 제작만큼 중요한 것이 검색 유입이다. 아무리 좋은 작품 소개와 상세 리뷰를 꾸준히 올려도 사용자에게 제대로 노출되지 않으면 의미가 반감된다. 특</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0505.html">마포의 야경과 함께하는 주말, 지역 문화생활 완벽 가이드</a>
+        <p class="post-item__summary">마포는 서울의 중심부에 위치하면서도 독특한 지역 문화를 자랑하는 곳입니다. 한강변의 아름다운 경관과 함께 다양한 식당, 카페, 엔터테인먼트 시설이 밀집해 있어 주말을 보내기에 최적의 장소로 꼽힙니다</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0506.html">백링크 자동화 프로그램이 선물하는 신작애니 홍보 혁신</a>
+        <p class="post-item__summary">신작애니 제작자라면 매출 증가를 위한 온라인 존재감을 끌어올리는 것이 필수적이다. 그러나 백링크 자동화 프로그램을 활용하지 않으면 수동으로 링크를 구축하는 번거로움이 남는다. 이 프로그램은 사이트 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0507.html">마포의 성장하는 비즈니스 생태계와 디지털 마케팅 서비스</a>
+        <p class="post-item__summary">마포는 서울의 주요 상업지역으로서 점차 많은 소규모 사업가와 스타트업들이 모여드는 곳입니다. 이 지역에는 카페, 식당, 소매점 등 다양한 로컬 비즈니스가 활발하게 운영 중이며, 각 사업체들은 자신의</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0508.html">백링크 자동화 프로그램, 신작애니 사이트에서 효과 보는 법</a>
+        <p class="post-item__summary">마포 지역에서 신작애니를 주제로 한 사이트를 운영할 때 검색 결과 상위 노출을 목표로 한다면 백링크 자동화 프로그램 도입을 고려해볼 만하다. 신규 콘텐츠가 지속적으로 생산되는 신작애니 특성상 백링크</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0509.html">신작애니 마포에서 백링크 자동화 프로그램으로 온라인 노출 극대화</a>
+        <p class="post-item__summary">신작애니의 신뢰도를 높이려면 온라인에서의 인지도가 필수적이다. 특히 마포와 같은 지역 시장에서는 지역 타깃에 맞춘 검색 결과가 결정적인 역할을 한다. 기존에는 링크 확보가 수작업으로 이루어져 시간과</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0510.html">신작애니 마케팅에 백링크 자동화 프로그램이 필요한 이유</a>
+        <p class="post-item__summary">마포에서 신작애니를 준비 중이라면 온라인 노출 전략이 무엇보다 중요하다. 아무리 완성도 높은 작품이라도 검색 결과에서 뒤쳐지면 시청자가 유입되지 않기 때문이다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0511.html">백링크 자동화 프로그램으로 신작애니 마포의 SEO를 혁신합니다</a>
+        <p class="post-item__summary">마포에서 활보하는 신작애니 제작자라면 구글 검색 결과에서 상위에 노출되는 것이 가장 큰 목표입니다. 그러한 목표를 달성하려면 SEO 전략이 반드시 필수이며 특히 백링크가 핵심 자산이 됩니다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0512.html">마포 지역 가라오케 문화와 홍대 일대 단체 예약 정보</a>
+        <p class="post-item__summary">마포는 서울 도심 속 예술과 상업이 어우러진 독특한 지역입니다. 홍익대학교를 중심으로 형성된 문화 거리에서부터 합정역 일대의 활기찬 카페 문화까지, 다양한 세대가 즐겨 찾는 장소로 알려져 있습니다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0513.html">마포 지역의 다양한 엔터테인먼트와 문화 공간 가이드</a>
+        <p class="post-item__summary">마포는 서울의 중심부에 위치하면서도 독특한 매력을 지닌 지역이다. 한강 공원부터 상수역 주변의 카페 문화, 홍대입구역의 예술 공간까지 다양한 볼거리가 모여 있다. 이 지역은 젊은 세대뿐만 아니라 가</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0514.html">마포에서 신작애니 사이트 운영하며 써본 백링크 자동화 프로그램 후기</a>
+        <p class="post-item__summary">마포에서 신작애니 소개 사이트를 운영한 지 어느덧 6개월이 지났다. 매일 업데이트되는 최신 애니 정보와 함께 방문자 수를 늘리기 위해 고민하던 차에 백링크 자동화 프로그램을 알게 되었다. 수동으로 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0515.html">마포 신작애니가 찾는 백링크 자동화 프로그램의 비밀</a>
+        <p class="post-item__summary">마포에서 신작애니 제작자들이 늘어남에 따라 온라인 인지도를 높이는 것이 필수적이다. 그 핵심은 바로 타 사이트와의 상호 연결, 즉 백링크의 품질과 양이다. 이때 막대한 수작업은 인력과 시간을 뺏어들</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0130.html">백링크 자동화 프로그램 활용한 구글 봇 정밀 검진 및 크롤 버짓 밀착 간호</a>
+        <p class="post-item__summary">많은 운영자가 백링크 자동화 프로그램을 단순히 순위 상승을 위한 도구로만 오해하고 있습니다. 실제 검색 엔진의 효율적인 운용을 위해서는 크롤러가 사이트를 방문하는 경로와 빈도를 명확히 파악하는 것이</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0131.html">백링크 자동화 프로그램 기반 4</a>
+        <p class="post-item__summary">고급 마케팅 인프라를 구축하려면 우선 자동화 시스템이 갖춰야 할 명확한 조건들을 이해해야 합니다. 단순한 스크립트 반복을 넘어 4-에이전트 구조를 통해 데이터를 수집하고 분류하며 검증하는 체계가 필</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0132.html">백링크 자동화 프로그램 활용한 마포 홍대 로컬 럭셔리 밤문화 가이드</a>
+        <p class="post-item__summary">여러분은 마포나 홍대 지역에서 진정한 럭셔리 밤문화를 즐기기 위해 어떤 기준을 가지고 계신가요? 수많은 매장 사이에서 자신에게 맞는 장소를 찾는 것은 생각보다 어려운 숙제일 수 있습니다. 정보가 넘</p>
+      </li>
+      </ul>
+    <nav class="pager">
+      <span class="pager__current">1</span>
+      <a class="pager__link" href="posts-2.html">2</a>
+    </nav>
+    </main>
+  </div>
+</body>
+</html>
